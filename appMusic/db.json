@@ -1,0 +1,46 @@
+{
+  "audios": [
+    {
+      "name": "La La La",
+      "singer": "Naughty Boy ft. Sam Smith",
+      "img-src": "../allData/appMusic/img/1.jpeg",
+      "audio-src": "../allData/appMusic/audio/1.mp3",
+      "id": 1
+    },
+    {
+      "name": "Beggin'",
+      "singer": "Måneskin",
+      "img-src": "../allData/appMusic/img/2.jpeg",
+      "audio-src": "../allData/appMusic/audio/2.mp3",
+      "id": 2
+    },
+    {
+      "name": "Bad Guy",
+      "singer": "Billie Eilish",
+      "img-src": "../allData/appMusic/img/3.jpeg",
+      "audio-src": "../allData/appMusic/audio/3.mp3",
+      "id": 3
+    },
+    {
+      "name": "Độ Tộc 2",
+      "singer": "Masew, Độ Mixi, Phúc Du, Pháo",
+      "img-src": "../allData/appMusic/img/4.jpeg",
+      "audio-src": "../allData/appMusic/audio/4.mp3",
+      "id": 4
+    },
+    {
+      "name": "Peaches",
+      "singer": "Justin Bieber",
+      "img-src": "../allData/appMusic/img/5.jpeg",
+      "audio-src": "../allData/appMusic/audio/5.mp3",
+      "id": 5
+    },
+    {
+      "name": "Mood",
+      "singer": "24kGoldn",
+      "img-src": "../allData/appMusic/img/6.jpeg",
+      "audio-src": "../allData/appMusic/audio/6.mp3",
+      "id": 6
+    }
+  ]
+}

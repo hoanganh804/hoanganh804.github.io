@@ -1,0 +1,447 @@
+$fontKaushan: 'Kaushan Script',
+cursive;
+$fontMontserrat:'Montserrat',
+sans-serif;
+$fontRoboto:'Roboto',
+sans-serif;
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    min-height: 300vh;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 51.5vw;
+    position: relative;
+    .header_img {
+        position: relative;
+        width: 100%;
+        &_1 {
+            background: url("/assets/img/background_header.png") no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: auto;
+            padding-top: 52%;
+            z-index: 1;
+            position: absolute;
+        }
+        .picture {
+            background-image: linear-gradient(360deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+            opacity: .8;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            height: auto;
+            padding-top: 52%;
+            z-index: 2;
+        }
+    }
+    .nav_menu {
+        width: 1200px;
+        font-family: $fontMontserrat;
+        position: absolute;
+        z-index: 4;
+        display: flex;
+        justify-content: space-between;
+        // width: 1200px;
+        .logo {
+            padding-top: 25px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        ul {
+            margin: 0;
+            padding-top: 30px;
+            color: white;
+            font-size: 14px;
+            list-style: none;
+            display: flex;
+            li {
+                margin: 0;
+                padding: 0 30px;
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+        z-index: 4;
+        color: white;
+        .header_content {
+            font-family: $fontKaushan;
+            font-size: 72px;
+        }
+        .main_content {
+            font-size: 150px;
+            font-family: $fontRoboto;
+            font-weight: bold;
+            text-align: center;
+            line-height: 140px;
+            margin-bottom: 60px;
+            margin-top: 22px;
+        }
+        .thanhngang {
+            width: 60px;
+            border: 1px solid white;
+            margin-bottom: 45px;
+        }
+        .learn_more {
+            color: white;
+            margin: 0;
+            border: 4px solid white;
+            background-color: transparent;
+            font-family: $fontMontserrat;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 15px 30px;
+        }
+    }
+    .header_footer {
+        position: absolute;
+        z-index: 5;
+        bottom: 4%;
+        color: white;
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            height: 70px;
+            li {
+                padding-left: 30px;
+                .thanhngang {
+                    border: 1px solid white;
+                    width: 280px;
+                }
+                .form_chu {
+                    font-family: $fontMontserrat;
+                    padding-top: 10px;
+                    display: flex;
+                    align-items: flex-end;
+                    .so {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    .chu {
+                        font-size: 18px;
+                        line-height: 26px;
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container {
+    .story_aboutus {
+        .top_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 110px;
+            &_title {
+                font-family: $fontKaushan;
+                font-size: 24px;
+            }
+            &_main {
+                font-family: $fontMontserrat;
+                font-size: 30px;
+                font-weight: bold;
+                padding-top: 10px;
+            }
+            &_thanhngang {
+                width: 60px;
+                border: 1px solid #f38181;
+                margin: 36px 0;
+            }
+        }
+        &_content {
+            text-align: center;
+            width: 950px;
+            margin: 0 auto;
+            font-family: $fontRoboto;
+            font-size: 15px;
+            line-height: 24px;
+            color: #999999;
+        }
+        &_img {
+            display: flex;
+            width: 1200px;
+            margin: 100px auto;
+            justify-content: space-between;
+            .form_img_1 {
+                background: url("/assets/img/1.png");
+                width: 380px;
+                height: 250px;
+                position: relative;
+                &_overlay {
+                    background-image: linear-gradient(360deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+                    opacity: .8;
+                    position: absolute;
+                    width: 380px;
+                    height: 250px;
+                    padding-top: 52%;
+                    z-index: 2;
+                }
+                &_content {
+                    z-index: 3;
+                    position: absolute;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    top: 42%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    &_text {
+                        font-family: $fontMontserrat;
+                        font-weight: bold;
+                        font: size 18px;
+                    }
+                    &_icon {
+                        font-size: 26px;
+                    }
+                }
+            }
+            .img_3 {
+                background: url("/assets/img/3.png");
+                width: 380px;
+                height: 250px;
+            }
+            .img_2 {
+                background: url("/assets/img/2.png");
+                width: 380px;
+                height: 250px;
+            }
+        }
+    }
+    .some_infor {
+        width: 100%;
+        background-color: #95e1d3;
+        ul {
+            display: flex;
+            height: 270px;
+            list-style: none;
+            color: #fff;
+            width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            li {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-left: 1px solid #b5eae0;
+                height: 100%;
+                &:last-child {
+                    border-right: 1px solid #b5eae0;
+                }
+                .some_infor_so {
+                    font-size: 72px;
+                    font-weight: bold;
+                    font-family: $fontMontserrat;
+                }
+                .some_infor_chu {
+                    font-size: 14px;
+                    font-family: $fontMontserrat;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #f8f8f8;
+    .open_map {
+        position: relative;
+        &_img {
+            position: relative;
+            &_1 {
+                background: url("/assets/img/openmap.png");
+                width: 100%;
+                height: 200px;
+            }
+            &_overlay {
+                z-index: 1;
+                width: 100%;
+                height: 200px;
+                position: absolute;
+                top: 0;
+                opacity: .8;
+                background-image: linear-gradient(360deg, rgb(228, 228, 228) 0%, rgb(208, 208, 208) 100%);
+            }
+        }
+        &_content {
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: #f38181;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            transform: translateY(-50%);
+            align-items: center;
+            flex-direction: column;
+            &_icon {
+                font-size: 24px;
+                padding-bottom: 10px;
+            }
+            &_label {
+                font-family: $fontMontserrat;
+                font-weight: bold;
+                font-size: 24px;
+            }
+            &_thanhngang {
+                width: 60px;
+                border: 1px solid #f38181;
+                margin-top: 20px;
+            }
+        }
+    }
+    .main_footer {
+        width: 1200px;
+        height: 500px;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 70px;
+        &_mogo {
+            width: 500px;
+            height: 500px;
+            .logo {
+                font-family: $fontMontserrat;
+                font-weight: bold;
+                font-size: 46px;
+                color: #cccccc;
+            }
+            .footer_content {
+                font-family: $fontRoboto;
+                font-size: 15px;
+                line-height: 24px;
+                color: #999999;
+            }
+            .footer_followers {
+                color: #333333;
+                display: flex;
+                font-family: $fontMontserrat;
+                padding-top: 50px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid rgb(222, 222, 222);
+                &_so {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                &_label {
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 3px;
+                }
+            }
+            .footer_followus {
+                display: flex;
+                padding-top: 16px;
+                margin-bottom: 40px;
+                &_label {
+                    font-family: $fontRoboto;
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-style: italic;
+                    color: #999999;
+                }
+                ul {
+                    list-style: none;
+                    display: flex;
+                    li {
+                        color: #95e1d3;
+                        padding: 0 10px;
+                        &:first-child {
+                            padding-left: 18px;
+                        }
+                    }
+                }
+            }
+            .form_input {
+                height: 40px;
+                width: 380px;
+                display: flex;
+                input {
+                    font-family: $fontRoboto;
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-style: italic;
+                    width: 230px;
+                    padding-left: 12px;
+                    border-radius: none;
+                    outline: none;
+                    &::placeholder {
+                        color: #cecece;
+                    }
+                    border-right: none;
+                    border: .5px solid rgba(187,
+                    187,
+                    187,
+                    0.338);
+                }
+                button {
+                    font-family: $fontMontserrat;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: white;
+                    flex: 1;
+                    border: none;
+                    background-color: #95e1d3;
+                }
+            }
+        }
+        &_blogs {
+            height: 500px;
+            width: 350px;
+        }
+        &_ig {
+            height: 500px;
+            width: 350px;
+        }
+    }
+    .footer_dept {
+        border-top: 1px solid #e5e5e5;
+        width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .copyright {
+            font-family: $fontMontserrat;
+            font-size: 14px;
+            color: #333333;
+        }
+        .laaqiq {
+            font-family: $fontMontserrat;
+            font-size: 14px;
+            color: #f38181;
+            padding-left: 2px;
+        }
+    }
+}

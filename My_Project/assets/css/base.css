@@ -1,0 +1,41 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_full-width {
+    width: 100%;
+}
+
+.grid_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    min-width: 60px;
+    z-index: 1;
+}
+
+
+/*# sourceMappingURL=base.css.map */

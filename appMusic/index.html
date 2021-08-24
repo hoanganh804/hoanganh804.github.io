@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/92972152c8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <header class="app-name">
+            <span class="name-app">Music App</span>
+            <span class="author-app">By Hoang Anh</span>
+        </header>
+        <div class="container">
+            <div class="lists-music">
+                <img src="../allData/appMusic/img/default.png" alt="" srcset="" />
+            </div>
+            <div class="music-detail">
+                <div class="music-name">La La La</div>
+                <div class="music-author">Naughty Boy ft. Sam Smith</div>
+            </div>
+            <div class="progress-music">
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100" />
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="times">
+                <span class="now">00:00</span>
+                <span class="full">00:00</span>
+            </div>
+
+            <div class="music-control">
+                <div class="prev-music">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="play-music">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="next-music">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+        </div>
+        <footer class="options">
+            <div class="favorites"><i class="far fa-heart"></i></div>
+            <div class="return">
+                <i class="ti-reload"></i>
+            </div>
+            <div class="random">
+                <i class="ti-control-shuffle"></i>
+            </div>
+            <div class="more"><i class="fas fa-list-ul"></i></div>
+        </footer>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
