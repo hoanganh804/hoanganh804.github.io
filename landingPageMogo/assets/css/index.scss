@@ -28,7 +28,7 @@ header {
         position: relative;
         width: 100%;
         &_1 {
-            background: url("/assets/img/background_header.png") no-repeat;
+            background: url("./assets/img/background_header.png") no-repeat;
             background-size: contain;
             width: 100%;
             height: auto;
@@ -190,7 +190,7 @@ header {
             margin: 100px auto;
             justify-content: space-between;
             .form_img_1 {
-                background: url("/assets/img/1.png");
+                background: url("./assets/img/1.png");
                 width: 380px;
                 height: 250px;
                 position: relative;
@@ -225,12 +225,12 @@ header {
                 }
             }
             .img_3 {
-                background: url("/assets/img/3.png");
+                background: url("./assets/img/3.png");
                 width: 380px;
                 height: 250px;
             }
             .img_2 {
-                background: url("/assets/img/2.png");
+                background: url("./assets/img/2.png");
                 width: 380px;
                 height: 250px;
             }
@@ -279,7 +279,7 @@ footer {
         &_img {
             position: relative;
             &_1 {
-                background: url("/assets/img/openmap.png");
+                background: url("./assets/img/openmap.png");
                 width: 100%;
                 height: 200px;
             }
