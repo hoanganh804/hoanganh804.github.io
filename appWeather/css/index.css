@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.377), rgba(255, 255, 255, 0.658)), url(img/anh.JPG);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.377), rgba(255, 255, 255, 0.658)), url(../img/anh.JPG);
     background-size: 100%;
     background-position-y: bottom;
     color: rgba(28, 31, 32, 0.973);
