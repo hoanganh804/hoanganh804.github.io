@@ -1,0 +1,154 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@mixin text_input {
+    outline: none;
+    padding: 14px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid rgb(147, 147, 147);
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.main_container {
+    height: 200vh;
+}
+
+.main_form_register {
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form_register {
+        position: absolute;
+        background-color: rgba(176, 176, 176, 0.146);
+        border-radius: 20px;
+        width: 400px;
+        height: 600px;
+        h2 {
+            color: rgb(238, 238, 238);
+            font-size: 40px;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .form_add {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            .username {
+                @include text_input;
+            }
+            .password {
+                @include text_input;
+            }
+            .mail {
+                @include text_input;
+            }
+            .name {
+                @include text_input;
+            }
+            .text_input_error {
+                position: relative;
+                border: 3px solid rgb(215, 73, 57);
+                &::placeholder {
+                    color: rgb(201, 105, 105);
+                }
+            }
+            .confirm {
+                background-color: rgb(20, 85, 196);
+                color: rgb(230, 230, 230);
+                font-size: 20px;
+                padding: 14px 10px;
+                margin: 10px 0;
+                border-radius: 3px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+        .dieukhoan {
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            padding-top: 20px;
+            span {
+                text-align: center;
+                color: rgb(196, 196, 196);
+            }
+        }
+    }
+}
+
+.main_listuser {
+    background-color: #01012c;
+    height: 100vh;
+    color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .listuser_table {
+        background-color: rgba(176, 176, 176, 0.146);
+        height: 500px;
+        min-width: 900px;
+        border-radius: 20px;
+        table,
+        th,
+        td {
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid rgba(138, 138, 138, 0.79);
+            padding: 10px 20px;
+        }
+        table {
+            tr {
+                td {
+                    button {
+                        background-color: green;
+                        color: rgb(213, 213, 213);
+                        margin: 0 4px;
+                        border: none;
+                        border-radius: 4px;
+                        padding: 6px 16px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                    input {
+                        width: 110px;
+                        background-color: transparent;
+                        border: none;
+                        color: rgb(187, 187, 187);
+                        font-size: 14px;
+                    }
+                }
+            }
+            .update_active {
+                td {
+                    input {
+                        width: 110px;
+                        background-color: rgb(223, 223, 223);
+                        border: none;
+                        outline: none;
+                        color: rgb(28, 28, 28);
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

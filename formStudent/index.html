@@ -5,10 +5,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <title>Document</title>
 </head>
 
-<body></body>
-
+<body>
+    <div class="app">
+        <div class="main_container">
+            <div class="main_form_register">
+                <div class="form_register">
+                    <h2 class="register">Register</h2>
+                    <form action="" class="form_add">
+                        <input type="text" autocomplete="off" name="name" class="username" placeholder="UserName" />
+                        <input type="password" name="name" class="password" placeholder="Password" />
+                        <input type="text" autocomplete="off" name="name" class="name" placeholder="Name" />
+                        <input type="text" autocomplete="off" name="name" class="mail" placeholder="E-mail" />
+                        <button type="submit" class="confirm">Sign Up</button>
+                    </form>
+                    <div class="dieukhoan">
+                        <span>En vous inscrivant, vous acceptez les Conditions Générales
+                d'Utilisation de hoanganh.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="main_listuser">
+          <div class="listuser_table">
+            <table class="table_users">
+              <tr>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+              <!-- <tr class="user_id_1 hello">
+                <td>
+                  <input type="text" disabled value="hoanganh804" />
+                </td>
+                <td>anhhk101</td>
+                <td>hoang anh</td>
+                <td>hoanganh804@gmail.com</td>
+                <td>
+                  <button class="buttonUpdate">Update</button>
+                  <button onclick="delete_user(1)" class="buttonDelete">
+                    Delete
+                  </button>
+                </td>
+              </tr> -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
