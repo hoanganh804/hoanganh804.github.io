@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(125, 222, 233), rgb(225, 139, 233));
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.app {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(152, 151, 151);
+    // background-image: linear-gradient(rgb(183, 205, 215), rgb(162, 180, 203));
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        line-height: 50px;
+        margin-top: 10px;
+        color: rgb(87, 86, 86);
+    }
+    .form_input {
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: center;
+        input {
+            outline: none;
+            padding: 0px 8px;
+            border-right: none;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            border: 0.5px solid rgb(27, 145, 63);
+        }
+        button {
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .listTodo {
+        margin-bottom: 10px;
+        height: 400px;
+        overflow: auto;
+        .todo_form_item {
+            display: flex;
+            background-color: rgba(188, 240, 200, 0.297);
+            margin: 8px 20px;
+            padding: 10px 10px;
+            justify-content: space-between;
+            .icon {
+                display: flex;
+                i {
+                    cursor: pointer;
+                    padding: 6px;
+                }
+            }
+        }
+        .done {
+            background-color: rgba(216, 126, 126, 0.584);
+            .todo_items {
+                text-decoration: line-through;
+            }
+        }
+    }
+}

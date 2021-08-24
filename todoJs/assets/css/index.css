@@ -1,0 +1,114 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7ddee9), to(#e18be9));
+  background-image: linear-gradient(#7ddee9, #e18be9);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.app {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #989797;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app h1 {
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+  color: #575656;
+}
+
+.app .form_input {
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .form_input input {
+  outline: none;
+  padding: 0px 8px;
+  border-right: none;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border: 0.5px solid #1b913f;
+}
+
+.app .form_input button {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.app .form_input button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.app .listTodo {
+  margin-bottom: 10px;
+  height: 400px;
+  overflow: auto;
+}
+
+.app .listTodo .todo_form_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(188, 240, 200, 0.297);
+  margin: 8px 20px;
+  padding: 10px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .listTodo .todo_form_item .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .listTodo .todo_form_item .icon i {
+  cursor: pointer;
+  padding: 6px;
+}
+
+.app .listTodo .done {
+  background-color: rgba(216, 126, 126, 0.584);
+}
+
+.app .listTodo .done .todo_items {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=index.css.map */
