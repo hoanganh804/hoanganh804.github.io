@@ -1,5 +1,6 @@
 {
   "name": "fist-react",
+  "homepage": "https://hoanganh804.github.io/first-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,8 +38,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-"homepage": "https://hoanganh804.github.io/first-react/"
-
+    ]
   }
 }
