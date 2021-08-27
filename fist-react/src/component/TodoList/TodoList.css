@@ -1,0 +1,20 @@
+input {
+  width: 200px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+li {
+  background-color: #b3b1b1;
+  width: 208px;
+  line-height: 30px;
+  border-radius: 6px;
+  margin: 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,gBAAgB,EAAE,OAAiB;EACnC,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,GAAG;EACZ,aAAa,EAAE,IAAI;EAEnB,MAAM,EAAE,OAAO;CAChB",
+    "sources": [
+        "ClickMe.scss"
+    ],
+    "names": [],
+    "file": "ClickMe.css"
+}
